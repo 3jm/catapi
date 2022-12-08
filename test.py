@@ -28,4 +28,4 @@ def get_cat_image():
         return error_response
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=80)
