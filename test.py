@@ -1,4 +1,4 @@
-from flask import Flask, send_file, make_response
+from flask import Flask, send_file, make_response, render_template
 import random
 
 app = Flask(__name__)
