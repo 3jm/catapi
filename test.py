@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return redirect('/cat')
+    return render_template('index.html')
 
 @app.route('/cat')
 def get_cat_image():
