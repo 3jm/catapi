@@ -3,6 +3,10 @@ import random
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return redirect('/cat')
+
 @app.route('/cat')
 def get_cat_image():
     # Generate a random number between 1 and 10
