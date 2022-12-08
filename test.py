@@ -3,6 +3,11 @@ import random
 
 app = Flask(__name__)
 
+@app.route('/style.css')
+def get_stylesheet():
+    with open('style.css', 'r') as f:
+        return send_file(f, mimetype='text/css')
+
 @app.route('/')
 def index():
     return render_template('index.html')
